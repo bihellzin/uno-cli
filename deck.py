@@ -30,7 +30,7 @@ class Deck:
                     self.deck.append(NumberCard('number', color, number))
 
     def generate_special_colored_cards(self):
-        card_types = ['draw_2', 'reverse', 'skip']
+        card_types = ['draw plus 2', 'reverse', 'skip']
         colors = [BLUE, GREEN, RED, YELLOW]
 
         for card_type in card_types:
@@ -39,7 +39,7 @@ class Deck:
                 self.deck.append(ColoredCard(card_type, color))
 
     def generate_uncolored_cards(self):
-        card_types = ['wild', 'wild_draw_4']
+        card_types = ['wild', 'wild plus 4']
 
         for card_type in card_types:
             for i in range(4):
