@@ -44,3 +44,7 @@ class Deck:
         for card_type in card_types:
             for i in range(4):
                 self.deck.append(Card(card_type))
+
+
+    def top_of_stack_card(self):
+        return self.stack[-1].card
